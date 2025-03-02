@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./Home.scss";
 import { Link } from "react-router-dom";
 import Image1 from "../images/Untitled Feb 23 6_26 PM (5).png";
-import Images1 from "../images/Untitled Feb 23 6_26 PM (8).png";
 import Images2 from "../images/Untitled Feb 23 6_26 PM (9).png";
 import Images3 from "../images/Untitled Feb 23 6_26 PM (12).png";
 import Images4 from "../images/Untitled Feb 23 6_26 PM (10).png";

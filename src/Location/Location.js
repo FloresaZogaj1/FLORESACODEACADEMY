@@ -13,6 +13,7 @@ const Location = () => {
         style={{ border: 0 }}
         allowFullScreen=""
         loading="lazy"
+        title="Location Map"
       ></iframe>
     </div>
   );
