@@ -1,0 +1,62 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #333;
+    color: white;
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+  
+      li {
+        a {
+          color: white;
+          text-decoration: none;
+          font-size: 18px;
+          transition: color 0.3s;
+  
+          &:hover {
+            color: #ffcc00;
+          }
+        }
+      }
+    }
+  
+    .hamburger {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  }
+  
+  // Për celularë
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      padding: 10px;
+      background-color: #444;
+  
+      &.open {
+        display: flex;
+      }
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+  

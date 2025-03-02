@@ -1,0 +1,50 @@
+.students-page {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .students-section,
+  .stars-section {
+    margin-bottom: 50px;
+  }
+  
+  h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .students-list,
+  .stars-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .student-card,
+  .star-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 200px;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  p {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .stars-section {
+    background-color: #fffbe6;
+    padding: 40px 20px;
+    border-radius: 10px;
+  }
+  
