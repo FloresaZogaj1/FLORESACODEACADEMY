@@ -7,16 +7,19 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <h2>Floresa Code Academy</h2>
-      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-        ☰
+      <div className="logo-container">
+        <span className="logo-text">Floresa Code Academy</span>
       </div>
-      <ul className={menuOpen ? "open" : ""}>
+
+      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+        <span>{menuOpen ? "✖" : "☰"}</span>
+      </div>
+      <ul className={menuOpen ? "nav-links open" : "nav-links"}>
         <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
         <li><Link to="/courses" onClick={() => setMenuOpen(false)}>Courses</Link></li>
         <li><Link to="/students" onClick={() => setMenuOpen(false)}>Students</Link></li>
         <li><Link to="/apply" onClick={() => setMenuOpen(false)}>Apply</Link></li>
-        <li><Link to="/location" onClick={() => setMenuOpen(false)}>Location</Link></li>
+        <li><Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link></li>
       </ul>
     </nav>
   );

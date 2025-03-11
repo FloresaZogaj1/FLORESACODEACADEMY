@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./Home.scss";
 import { Link } from "react-router-dom";
 import Image1 from "../images/Untitled Feb 23 6_26 PM (5).png";
-import Images2 from "../images/Untitled Feb 23 6_26 PM (9).png";
-import Images3 from "../images/Untitled Feb 23 6_26 PM (12).png";
+import Images2 from "../images/teen-teacher-chemistry-lesson-making-experiments.jpg";
+import Images3 from "../images/close-up-kid-while-having-technology-education-class (1).jpg";
 import Images4 from "../images/Untitled Feb 23 6_26 PM (10).png";
 import Images6 from "../images/bb.jpg"
 import Images7 from "../images/aaa.jpg"
@@ -84,6 +84,22 @@ const Home = () => {
           ))}
         </div>
       </section>
+      <section className="online-courses">
+  <h2>Ndjek Kursët Online</h2>
+  <p>
+    Tani mund të ndjekësh kursët tona nga kudo përmes <strong>Zoom</strong> ose <strong>Google Meet</strong>.
+    Bashkohu me ne dhe mëso programimin nga rehatia e shtëpisë tënde!
+  </p>
+  <div className="online-buttons">
+    <a href="https://zoom.us/" target="_blank" rel="noopener noreferrer" className="btn zoom-btn">
+      Mëso për Zoom
+    </a>
+    <a href="https://meet.google.com/" target="_blank" rel="noopener noreferrer" className="btn meet-btn">
+      Mëso për Google Meet
+    </a>
+  </div>
+</section>
+
     </div>
   );
 };

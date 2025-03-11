@@ -8,6 +8,8 @@ import Studenti5 from "../images/481231923_506790245795901_5367126321295196235_n
 import Studenti6 from "../images/1000029539.jpg"
 import Studenti7 from "../images/1000029543.jpg"
 import Studenti8 from "../images/1000029551.jpg"
+import Studenti9 from "../images/20250305_154748.jpg"
+import Studenti10 from "../images/20250305_144131.jpg"
 
 
 const students = [
@@ -24,6 +26,8 @@ const stars = [
   { name: "Arizona Mazreku", image: Studenti6},
   { name: "Shkëmb Mazreku", image: Studenti7 },
   { name: "Rejana Mazreku", image: Studenti8 },
+  { name: "Aulona Kafexholli", image: Studenti9 },
+  { name: "Elsa Mazreku", image: Studenti10 },
 ];
 
 const Students = () => {

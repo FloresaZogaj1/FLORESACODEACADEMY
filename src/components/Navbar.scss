@@ -1,62 +1,93 @@
 .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #054338;
+  color: white;
+  position: relative;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-text {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .logo-text {
+    display: none;
+  }
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ffcc00;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #ffcc00;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+    display: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  .nav-links li {
+    padding: 15px 0;
+    border-bottom: 1px solid #555;
+  }
+
+  .nav-links li:last-child {
+    border-bottom: none;
+  }
+
+  .nav-links.open {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    background-color: #333;
-    color: white;
-  
-    h2 {
-      font-size: 24px;
-    }
-  
-    ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-  
-      li {
-        a {
-          color: white;
-          text-decoration: none;
-          font-size: 18px;
-          transition: color 0.3s;
-  
-          &:hover {
-            color: #ffcc00;
-          }
-        }
-      }
-    }
-  
-    .hamburger {
-      display: none;
-      font-size: 24px;
-      cursor: pointer;
-    }
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  // Për celularë
-  @media (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    ul {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      padding: 10px;
-      background-color: #444;
-  
-      &.open {
-        display: flex;
-      }
-    }
-  
-    .hamburger {
-      display: block;
-    }
-  }
-  
+}
